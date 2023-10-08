@@ -62,9 +62,17 @@ const Home = () => (
       textAlign={'center'}
       marginBottom={'1em'}
     >
-      Upcoming events-
+      Upcoming events
     </chakra.h2>
-
+    <Text color="pink.100" textAlign={'center'} marginBottom={'2em'}>
+      <Link
+        href="https://instagram.com/iverbigscock1992"
+        textDecoration={'underline'}
+      >
+        DM us
+      </Link>{' '}
+      to be added to the guest list
+    </Text>
     <Box margin="0 auto" width="100%" maxW="15em" color="pink.100">
       <Text
         textAlign={'center'}
@@ -75,7 +83,7 @@ const Home = () => (
         Liverpool- 20/10/23
       </Text>
       <UnorderedList marginBottom={'1.5em'}>
-        <ListItem>The Naval Club</ListItem>
+        <ListItem>The Naval Club (20:15 start)</ListItem>
         <ListItem>The Rocket</ListItem>
         <ListItem>Five Ways</ListItem>
         <ListItem>The Edinburgh</ListItem>
@@ -89,7 +97,7 @@ const Home = () => (
         Newcastle- 04/11/23
       </Text>
       <UnorderedList marginBottom={'1.5em'}>
-        <ListItem>The Yard Bar</ListItem>
+        <ListItem>The Yard Bar (19:30 start)</ListItem>
         <ListItem>Rusty's</ListItem>
         <ListItem>The Eagle</ListItem>
         <ListItem>Powerhouse</ListItem>
