@@ -6,7 +6,7 @@ import {
   Text,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const SocialButton = ({ children, label, href }) => {
   return (

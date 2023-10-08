@@ -3,13 +3,11 @@ import {
   Box,
   Collapse,
   Flex,
-  Icon,
   IconButton,
   Popover,
   PopoverTrigger,
   Stack,
   Text,
-  useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
