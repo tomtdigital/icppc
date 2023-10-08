@@ -1,5 +1,6 @@
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
+  chakra,
   Box,
   Collapse,
   Flex,
@@ -36,6 +37,8 @@ const NavBar = () => {
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
             colorScheme={'purple'}
+            bg={'none'}
+            _hover={{ bg: 'none' }}
             aria-label={'Toggle Navigation'}
           />
         </Flex>
@@ -66,7 +69,7 @@ const DesktopNav = () => {
               <Box
                 as="a"
                 p={2}
-                href={navItem.href ?? '#'}
+                href={navItem.href || '#'}
                 fontSize={'sm'}
                 fontWeight={500}
                 color={linkColor}
@@ -76,6 +79,16 @@ const DesktopNav = () => {
                 }}
               >
                 {navItem.label}
+                {navItem.comingSoon ? (
+                  <>
+                    &nbsp;&nbsp;
+                    <chakra.span fontSize={'0.75em'}>
+                      <em>(coming soon)</em>
+                    </chakra.span>
+                  </>
+                ) : (
+                  ''
+                )}
               </Box>
             </PopoverTrigger>
           </Popover>
@@ -95,7 +108,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, comingSoon, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -103,7 +116,7 @@ const MobileNavItem = ({ label, children, href }) => {
       <Box
         py={2}
         as="a"
-        href={href ?? '#'}
+        href={href || '#'}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
@@ -112,6 +125,16 @@ const MobileNavItem = ({ label, children, href }) => {
       >
         <Text fontWeight={600} color={'white'}>
           {label}
+          {comingSoon ? (
+            <>
+              &nbsp;&nbsp;
+              <chakra.span fontSize={'0.75em'}>
+                <em>(coming soon)</em>
+              </chakra.span>
+            </>
+          ) : (
+            ''
+          )}
         </Text>
       </Box>
 
@@ -136,7 +159,12 @@ const NAV_ITEMS = [
   },
   {
     label: 'Instagram',
-    href: '#',
+    href: 'https://instagram.com/iverbigscock1992',
+  },
+  {
+    label: 'Merch',
+    href: '/',
+    comingSoon: true,
   },
 ];
 

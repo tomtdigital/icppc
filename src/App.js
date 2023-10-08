@@ -3,6 +3,7 @@ import { ChakraProvider, theme } from '@chakra-ui/react';
 import React from 'react';
 import Layout from './components/layout';
 import Home from './pages/home';
+import '../src/main.css';
 
 function App() {
   return (

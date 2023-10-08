@@ -17,13 +17,22 @@ const Home = () => (
     <Box margin="0 auto" width="100%" maxW="10em">
       <Image src={Crown} />
     </Box>
-    <chakra.h1
-      fontSize={{ base: '1.5em', md: '2em' }}
-      fontWeight="500"
-      textAlign={'center'}
-      color="pink.200"
-    >
-      Iverbig Cock's Posh Pub Crawl
+    <chakra.h1 fontWeight="500" textAlign={'center'}>
+      <chakra.span
+        display={'block'}
+        fontSize={{ base: '1.2em', md: '1.5em' }}
+        color="white"
+      >
+        IVERBIG COCK'S
+      </chakra.span>
+      <chakra.span
+        display={'block'}
+        fontWeight="700"
+        fontSize={{ base: '1.75em', md: '2.25em' }}
+        color="purple.900"
+      >
+        POSH PUB CRAWL
+      </chakra.span>
     </chakra.h1>
     <Box margin="0 auto" width="100%" maxW="15em">
       <Image src={Drag} />
@@ -38,10 +47,9 @@ const Home = () => (
     </chakra.h2>
     <Box margin="0 auto" width="100%" maxW="30em">
       <Text color="pink.100" textAlign={'center'}>
-        Insert text content Insert text content Insert text content Insert text
-        content Insert text content Insert text content Insert text content{' '}
-        Insert text content Insert text content Insert text content Insert text
-        content Insert text content Insert text content{' '}
+        Come join Iverbig Cock (the real Queen of the North) and her bevvy of
+        saucy Queens for Iverbig Cock's Posh Pub Crawl. Support local Queens and
+        support local businesses!
       </Text>
     </Box>
 
@@ -111,7 +119,10 @@ const Home = () => (
     <Box margin="0 auto" width="100%" maxW="15em">
       <Text textAlign={'center'} marginBottom={'0.8em'}>
         Follow us on{' '}
-        <Link href="#" textDecoration={'underline'}>
+        <Link
+          href="https://instagram.com/iverbigscock1992"
+          textDecoration={'underline'}
+        >
           Instagram
         </Link>
       </Text>

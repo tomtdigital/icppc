@@ -34,7 +34,7 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer() {
   return (
-    <Box bg={'#4f024e'} color={'white'} marginTop="2em">
+    <Box bg={'#4f024e'} color={'white'} marginTop="5em">
       <Container
         as={Stack}
         maxW={'6xl'}
@@ -44,12 +44,15 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Text>Minima Sites ©2023</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton
+            label={'Instagram'}
+            href={'https://instagram.com/iverbigscock1992'}
+          >
             <FaInstagram />
           </SocialButton>
         </Stack>
+        <Text>Minima ©2023</Text>
       </Container>
     </Box>
   );
