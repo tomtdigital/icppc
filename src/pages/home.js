@@ -76,11 +76,19 @@ const Home = () => (
     <Box margin="0 auto" width="100%" maxW="15em" color="pink.100">
       <Text
         textAlign={'center'}
-        marginBottom={'0.8em'}
+        marginBottom={'0.25em'}
         color="white"
         fontWeight={'bold'}
       >
         Liverpool- 20/10/23
+      </Text>
+      <Text
+        textAlign={'center'}
+        marginBottom={'0.8em'}
+        color="white"
+        fontWeight={'400'}
+      >
+        <em>Theme- Dress To Impress</em>
       </Text>
       <UnorderedList marginBottom={'1.5em'}>
         <ListItem>The Naval Club (20:15 start)</ListItem>
@@ -90,11 +98,19 @@ const Home = () => (
       </UnorderedList>
       <Text
         textAlign={'center'}
-        marginBottom={'0.8em'}
+        marginBottom={'0.25em'}
         color="white"
         fontWeight={'bold'}
       >
         Newcastle- 04/11/23
+      </Text>
+      <Text
+        textAlign={'center'}
+        marginBottom={'0.8em'}
+        color="white"
+        fontWeight={'400'}
+      >
+        <em>Theme- Look What The Cat Dragged In</em>
       </Text>
       <UnorderedList marginBottom={'1.5em'}>
         <ListItem>The Yard Bar (19:30 start)</ListItem>
